@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Buraq Medico & Mini Mart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <section class="contact-container">  
+                <div class="form-container">
+                    <h2>Al-Buraq Medico & Mini Mart</h2>
+                    <form action="#" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                        
+                        <button type="submit" onclick="sendMessage()">Send Message</button>
+                    </form>
+            </div>
+          
+            <div class="info-container">
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.8368933192116!2d67.0588368!3d24.8863236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f750a435c71%3A0xdf128b875189f9c!2sBuraq%20Mini%20Mart!5e0!3m2!1sen!2s!4v1699887634567!5m2!1sen!2s" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+              </iframe>               
+            </div>
+        </section>
+        <div class="icon">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+    </main>
+
+    <script>
+  function sendMessage() {
+            const phoneNumber = "0313-2029289"; 
+            const message = "Hello%20Al-Buraq%20Medico%20&%20Mini%20Mart,%20I%20have%20an%20inquiry!"; 
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+            window.open(whatsappUrl, '_blank'); 
+        }
+    </script>
+  
+</body>
+</html>
+
